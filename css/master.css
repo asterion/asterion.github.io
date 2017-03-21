@@ -1,8 +1,33 @@
+*{
+  background-color: #0d0e0d;
+  color: #eee;
+}
+
 body{
-  text-align: center;
   font-weight: bold;
+  max-width: 800px;
+  margin: auto;
+}
+
+header h3{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.thumb{
+  max-width: 200px;
+  float: left;
+  margin-right: 5px;
 }
 
 p{
   color: #71b655;
+}
+
+.limpiar{
+  clear: both;
+}
+
+ul{
+  list-style-type: none;
 }
