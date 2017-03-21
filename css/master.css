@@ -48,6 +48,21 @@ ul{
   list-style-type: square;
 }
 
+footer{
+  /*text-align: center;*/
+  padding: 12px;
+}
+
+footer span {
+  border: 1px solid #ede;
+  margin: 2px;
+  /*padding: 3px 5px 3px 5px;*/
+}
+
+.time {
+  font-size: .7em;
+}
+
 .clear-fix{
   clear: both;
 }
