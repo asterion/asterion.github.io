@@ -1,0 +1,286 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Oswald', sans-serif;
+  background-color: #4A4A4A;
+  color: #F3F3F3;
+}
+
+header{
+  margin-bottom: 10px;
+}
+
+header h1{
+  text-align: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+footer{
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: #FFDD67;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+
+td, th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+tr{
+  background-color: #F3F3F3;
+  color: black;
+}
+
+table thead tr{
+  background-color: rgba(0,0,0, .5);
+  color: white;
+}
+
+ul li{
+  list-style: none;
+}
+
+.fa.fa-star.fa-lg{
+  color: gold;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card{
+  clear: both;
+  padding-top: 10px;
+  padding-right: 10px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-top: 15px solid #F3F3F3;
+}
+
+.card .wrestler img{
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.card .wrestler p{
+  line-height: 1.5em;
+  margin-bottom: 5px;
+}
+
+.card:nth-child(odd) .wrestler img{
+  float: left;
+  width: 200px;
+}
+
+.card:nth-child(even) .wrestler img{
+  float: right;
+  width: 200px;
+}
+
+.card .wrestler h2{
+  text-align: center;
+}
+
+.col-1{ flex: 1 1 10% }
+.col-2{ flex: 1 1 20% }
+.col-3{ flex: 1 1 30% }
+.col-4{ flex: 1 1 40% }
+.col-5{ flex: 1 1 50% }
+.col-6{ flex: 1 1 60% }
+.col-7{ flex: 1 1 70% }
+.col-8{ flex: 1 1 80% }
+.col-9{ flex: 1 1 90% }
+.col-10{flex: 1 1 100%}
+
+.ninja{
+  border-radius: 50%;
+  background-color: rgba(0,0,0, 0.1);
+  color: white;
+  font-size: 3em;
+}
+
+.ninja span{
+  text-decoration: underline;
+}
+
+.ninja img{
+  width: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.banners{
+  text-align: center;
+}
+
+.stick{
+  position: fixed;
+  width: 160px;
+  top: 50%;
+  left: 50%;
+  transition: linear .3s;
+  overflow: hidden;
+}
+
+.stick .menu{
+  border-radius: 20px;
+  border: 1px solid rgba(0,0,0,1);
+  visibility: hidden;
+  background-color: aliceblue;
+}
+
+.stick .menu img{
+  max-width: 35px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.stick .menu ul li{
+  text-align: center;
+  padding-top: 5px;
+}
+
+.stick .menu ul li a{
+    color: black;
+}
+
+.stick:hover .menu{
+  visibility: visible;
+}
+
+.cloud{
+  max-width: 300px;
+  position: fixed;
+  text-align: center;
+  padding: 5px 0 5px 5px;
+}
+
+.cloud img{
+  max-width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.cloud span{
+  padding: 5px;
+  margin-bottom: 2px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 9px;
+}
+
+.search{
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.search form input[name="s"]{
+  width: 80%;
+  height: 2em;
+  /*padding: 0;*/
+  border: none;
+  text-indent: 1em;
+  border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+  .col-6 .ninja{
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  body{
+    background-image: none;
+  }
+
+  header nav ul li {
+    display: block;
+    border-bottom: 1px solid #FFDD67;
+  }
+
+  header nav ul li:first-child{
+    border-top: 1px solid #FFDD67;
+  }
+
+  header nav ul li i{
+    float: right;
+  }
+
+  .container{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card:nth-child(odd) .wrestler img{
+    float: left;
+    width: 100px;
+  }
+
+  .card:nth-child(even) .wrestler img{
+    float: right;
+    width: 100px;
+  }
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .weapons{
+    text-align: center;
+  }
+
+  .weapons ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 1px 5px 1px 5px;
+    margin: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .col-6 .ninja{
+    display: none;
+  }
+}
