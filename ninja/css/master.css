@@ -11,6 +11,10 @@ body{
 
 header{
   margin-bottom: 10px;
+  background-image: url('../img/he-man.png');
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: right;
 }
 
 header h1{
@@ -216,10 +220,73 @@ ul li{
 .search form input[name="s"]{
   width: 80%;
   height: 2em;
-  /*padding: 0;*/
   border: none;
   text-indent: 1em;
   border-radius: 5px;
+}
+
+.calendar{
+  color: black;
+  min-height: 140px;
+  margin-left: 1px;
+  margin-right: 1px;
+  box-sizing: border-box;
+}
+
+.month{
+  width: 100%;
+  color: black;
+  background-color: aliceblue;
+  margin-bottom: 2px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.week{
+  width: 100%;
+  clear: both;
+  margin-bottom: 4px;
+  box-sizing: border-box;
+}
+
+.day{
+  box-sizing: border-box;
+  text-align: center;
+  float: left;
+  min-width: 13.38%;
+  min-height: 20%;
+  background-color: aliceblue;
+}
+
+.week .day:last-child{
+  background-color: rgba(255, 0, 0, .5);
+}
+
+.day:nth-child(2n){
+  margin: 0 1% 1% 1%;
+}
+
+.day.today{
+  background-color: royalblue;
+  color: ghostwhite;
+}
+
+.clearfix{
+  content: "";
+  clear: both;
+}
+
+.burger{
+  text-align: center;
+}
+
+.food{
+  text-align: center;
+  margin: 0 auto;
+  max-width: 120px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -229,8 +296,13 @@ ul li{
 }
 
 @media (max-width: 768px) {
-  body{
+  header{
+    margin-bottom: 10px;
     background-image: none;
+    background-image: url('../img/bone.svg');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: top right;
   }
 
   header nav ul li {
